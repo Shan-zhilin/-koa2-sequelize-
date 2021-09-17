@@ -7,3 +7,19 @@ export async function userLogin (data) {
         data
     })
 }
+
+// 用户注册
+export async function userRegister(data) {
+    return await request('/register',{
+        method:'post',
+        data
+    })
+}
+
+// 更新用户信息
+export async function updateUserInfo(data) {
+    return await request('/updateuserinfo',{
+        method:'post',
+        data
+    })
+}

@@ -2,11 +2,11 @@
 const Sequelize = require('sequelize');
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('user', {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true
-    },
+    // id: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: true,
+    //   primaryKey: true,
+    // },
     username: {
       type: DataTypes.STRING(50),
       allowNull: true
